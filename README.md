@@ -46,6 +46,12 @@ The backend logic handles the retrieval of weather data from the Open Meteo API.
 3. Click the search button to retrieve weather information for the specified location.
 4. View the updated weather data displayed on the GUI.
 
+## Screenshots
+![image](https://github.com/Mansko09/WeatherApp/assets/127218021/1f8eafdc-4393-424d-b71a-cc244adc2052)
+
+![image](https://github.com/Mansko09/WeatherApp/assets/127218021/69e31464-8e3d-4ba6-8e96-b53fb4a22360)
+
+
 ## Dependencies
 
 - **JSON.simple Library**: Used for parsing JSON data retrieved from the API.
