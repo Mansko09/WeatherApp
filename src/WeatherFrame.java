@@ -14,7 +14,7 @@ public class WeatherFrame extends JFrame{
         setLocationRelativeTo(null); // Center the frame on the screen
 
         // Set the background image
-        ImageIcon backgroundIcon = new ImageIcon("WeatherApp_BG_resized.png");
+        ImageIcon backgroundIcon = new ImageIcon("src/assets/WeatherApp_BG_resized.png");
         JLabel backgroundLabel = new JLabel(backgroundIcon);
         backgroundLabel.setLayout(null);
 

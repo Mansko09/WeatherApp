@@ -6,5 +6,6 @@ public class Main{
             WeatherFrame frame = new WeatherFrame();
             frame.setVisible(true);
         });
+        System.out.println(WeatherApp.getLocationData("Tokyo"));
     }
 }
