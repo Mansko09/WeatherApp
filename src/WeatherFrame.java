@@ -2,29 +2,24 @@ import javax.swing.*;
 import java.awt.*;
 
 public class WeatherFrame extends JFrame{
-    JLabel label = new JLabel();
     public WeatherFrame() {
-        ImageIcon image = new ImageIcon("WeatherApp_BG.png");
+        setTitle("Weather App");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 800);
+        setLocationRelativeTo(null); // Center the frame on the screen
 
-        label.setIcon(image);
-        label.setHorizontalAlignment(JLabel.CENTER);
+        // Set the background image
+        ImageIcon backgroundIcon = new ImageIcon("WeatherApp_BG_resized.png");
+        JLabel backgroundLabel = new JLabel(backgroundIcon);
+        backgroundLabel.setLayout(null);
 
-        this.setTitle(" Weather App ");
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setResizable(false);
-        this.setSize(400,845);
-        this.setVisible(true);
-        this.add(label);
-
-        addGuiComponents();
-
-    }
-    private void addGuiComponents(){
-        //search field
         JTextField searchTextField = new JTextField();
-        searchTextField.setBounds(15,15,100,60);
-        searchTextField.setFont(new Font("Dialog", Font.PLAIN,24));
-        searchTextField.setVisible(true);
-        this.add(searchTextField);
+        searchTextField.setBounds(120, 160, 150, 50);
+        searchTextField.setFont(new Font("Sans Serif", Font.BOLD, 24));
+        backgroundLabel.add(searchTextField);
+
+
+        add(backgroundLabel);
     }
+
 }

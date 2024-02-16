@@ -1,8 +1,10 @@
-
+import javax.swing.*;
 
 public class Main{
     public static void main(String[] args) {
-        new WeatherFrame();
-
+        SwingUtilities.invokeLater(() -> {
+            WeatherFrame frame = new WeatherFrame();
+            frame.setVisible(true);
+        });
     }
 }
